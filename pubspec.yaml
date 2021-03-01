@@ -7,15 +7,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-  oktoast: ^2.3.0
-  image: ^2.1.4
-  esc_pos_utils: ^0.4.9
-  charset_converter: ^1.0.3
-  intl: ^0.16.1
-  qr_flutter: ^3.2.0
-  path_provider: ^1.6.5
   bluetooth_thermal_printer: ^0.0.4
+  esc_pos_utils: ^0.4.9
+  image: ^2.1.4
+  path_provider: ^1.6.5
 
 dev_dependencies:
   flutter_test:
@@ -32,6 +27,7 @@ flutter:
     - assets/rabbit_black.jpg
     - assets/resizerab.jpg
     - assets/response.png
+    - assets/response-1.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

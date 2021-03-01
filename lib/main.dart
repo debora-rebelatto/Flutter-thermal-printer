@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:typed_data';
-
 import 'package:esc_pos_utils/esc_pos_utils.dart';
 import 'package:flutter/material.dart' hide Image;
 import 'package:flutter/services.dart';
@@ -86,9 +85,7 @@ class _MyAppState extends State<MyApp> {
     CapabilityProfile profile = await CapabilityProfile.load();
     final Ticket ticket = Ticket(PaperSize.mm80, profile);
 
-
-
-    final ByteData dataRes = await rootBundle.load('assets/response.png');
+    final ByteData dataRes = await rootBundle.load('assets/response-1.jpg');
     final Uint8List bytesres = dataRes.buffer.asUint8List();
     final Image imageres = decodeImage(bytesres);
     ticket.image(imageres);
@@ -160,10 +157,6 @@ class _MyAppState extends State<MyApp> {
               ),
               SizedBox(
                 height: 30,
-              ),
-              OutlineButton(
-                onPressed: connected ? this.printGraphics : null,
-                child: Text("Print"),
               ),
               OutlineButton(
                 onPressed: connected ? this.printTicket : null,
